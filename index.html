@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO & Open Graph Meta Tags -->
+  <title>Sachin | Java Full Stack Developer, backend-focused</title>
+  <meta name="description"
+    content="Portfolio of Sachin, a Java Full Stack Developer based in Bengaluru specializing in Spring Boot microservices, REST APIs, MySQL, and modern web applications.">
+  <meta name="author" content="Sachin">
+  <meta name="keywords"
+    content="Java Developer, Spring Boot, Full Stack Developer, Fresher, Bengaluru, REST APIs, MySQL, React, Portfolio">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sachin | Java Full Stack Developer">
+  <meta property="og:description"
+    content="Explore projects, skills, and internship experience in Java, Spring Boot, REST APIs, and modern frontend technologies.">
+  <meta property="og:image" content="images/projects/fertilizer.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Sachin | Java Full Stack Developer">
+  <meta property="twitter:description"
+    content="Java Full Stack Fresher based in Bengaluru. Spring Boot, REST APIs, MySQL, and modern web development.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.svg">
+
+  <!-- Google Fonts: 'Outfit' (Headings) and 'Plus Jakarta Sans' (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Ambient Background Lighting -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="ambient-blob-1"></div>
+    <div class="ambient-blob-2"></div>
+    <div class="ambient-blob-3"></div>
+  </div>
+
+  <!-- ==========================================================================
+       Navigation Bar (FR-1, FR-3, FR-9)
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Sachin Portfolio Home">
+        <div class="brand-icon">S</div>
+        <div class="brand-text">Sachin Patil</div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action items: Dark/Light Mode & Hamburger -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme mode" title="Toggle theme">
+          ☀️
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open mobile navigation menu"
+          aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section (Section 3.2, FR-7, FR-8)
+         ========================================================================== -->
+    <section class="section hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              <span>Available for Hire • Bengaluru</span>
+            </div>
+
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-title">Sachin</h1>
+            <div class="hero-subtitle">
+              Java Full Stack Developer <span class="gradient-text"> | backend-focused</span>
+            </div>
+
+            <p class="hero-tagline">
+              Spring Boot developer focused on clean, well-structured REST APIs with
+              Spring Security and JPA. I also build the frontend in vanilla JavaScript,
+              from API integration to responsive layouts.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>View Projects</span>
+                <span>↓</span>
+              </a>
+              <a href="assets/resume/sachin_patil_resume.pdf" download="sachin_patil_resume.pdf"
+                class="btn btn-secondary" id="download-resume-hero">
+                <span>Download Resume</span>
+                <span>📄</span>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <div class="hero-socials">
+              <span class="hero-social-label">Find me on:</span>
+              <a href="https://github.com/Me-sachin123" target="_blank" rel="noopener noreferrer"
+                class="social-icon-link" aria-label="Sachin on GitHub" title="GitHub">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/sachin-patil272003" target="_blank" rel="noopener noreferrer"
+                class="social-icon-link" aria-label="Sachin on LinkedIn" title="LinkedIn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+              <a href="mailto:sachin.dev.work@gmail.com" class="social-icon-link" aria-label="Email Sachin"
+                title="Email">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="profile-card-wrapper">
+              <div class="profile-card">
+                <img src="images/profile.jpeg" alt="Sachin - Java Full Stack Developer Portrait" class="profile-img"
+                  width="340" height="380">
+                <div class="profile-badge-overlay">
+                  <div>
+                    <div class="profile-badge-title">Sachin Patil</div>
+                    <div class="profile-badge-sub">Java Full Stack Developer</div>
+                  </div>
+                  <div style="font-size: 1.3rem;">☕</div>
+                </div>
+              </div>
+
+              <!-- Decorative Floating Tech Chips -->
+              <div class="tech-tag-chip chip-1">
+                <span>🍃</span> Spring Boot
+              </div>
+              <div class="tech-tag-chip chip-2">
+                <!-- <span>⚛️</span> React Ready -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         About Section (Section 3.3)
+         ========================================================================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Bridging Robust Backends with Intuitive Interfaces</h2>
+          <p class="section-subtitle">A quick introduction to who I am and what I bring to software development.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content">
+            <p class="about-paragraph">
+              I am an MCA graduate and proactive Java Full Stack Developer based in Bengaluru, specializing in building
+              enterprise-grade backend architectures using Java, Spring Boot, and relational databases like MySQL.
+            </p>
+            <p class="about-paragraph">
+              During my intensive full-stack internship at QSpiders and analytical role at Simdaa Technologies, I
+              engineered RESTful APIs, implemented secure role-based access control with JWT, and developed intuitive
+              front-end interfaces.
+            </p>
+            <p class="about-paragraph">
+              I write clean, maintainable, well-documented Java with a strong grounding
+              in OOP, MVC and REST API design. I use AI-assisted tools to develop faster,
+              while reviewing and understanding every line I ship. I'm looking for a
+              fresher Java Full Stack role where I can contribute and grow.
+            </p>
+            <div style="margin-top: 10px;">
+              <a href="#contact" class="btn btn-secondary">Let's Connect 🤝</a>
+            </div>
+          </div>
+
+          <div class="about-stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">🎓</div>
+              <div class="stat-title">MCA Graduate</div>
+              <div class="stat-label">Computer Applications & Software Engineering</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">📍</div>
+              <div class="stat-title">Bengaluru</div>
+              <div class="stat-label">Based in India's Tech Capital</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">💼</div>
+              <div class="stat-title">2 Internships</div>
+              <div class="stat-label">QSpiders (Full Stack) & Simdaa (Power BI)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🚀</div>
+              <div class="stat-title">Immediate Joiner</div>
+              <div class="stat-label">Ready for Fresher Software Roles</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Skills Section (Section 3.4, FR-5)
+         ========================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">
+            A curated list of technologies I have worked with and can confidently answer interview questions on.
+          </p>
+        </div>
+
+        <!-- Rendered dynamically from data.js -->
+        <div class="skills-grid-wrapper" id="skills-container">
+          <!-- Populated by script.js from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Projects Section (Section 3.5, FR-4, FR-6, SRS 6.4.1)
+         ========================================================================== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects & System Architecture</h2>
+          <p class="section-subtitle">
+            Practical applications highlighting my backend architectural capabilities, security implementations, and
+            problem-solving skills.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="Full Stack">Full Stack</button>
+          <button class="filter-btn" data-filter="Backend">Backend / API</button>
+          <button class="filter-btn" data-filter="Productivity">Productivity</button>
+          <button class="filter-btn" data-filter="Analytics">Analytics</button>
+        </div>
+
+        <!-- Projects Grid (Rendered dynamically from data.js) -->
+        <div class="projects-grid" id="projects-container">
+          <!-- Populated by script.js from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Experience Section (Section 3.6)
+         ========================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Internships</span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">
+            Hands-on professional experience building real-world enterprise applications and business analytics
+            solutions.
+          </p>
+        </div>
+
+        <!-- Timeline populated from data.js -->
+        <div class="experience-timeline" id="experience-container">
+          <!-- Populated by script.js from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Education & Certifications Section (Section 3.7)
+         ========================================================================== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <p class="section-subtitle">Formal qualification and continuous specialized technical certifications.</p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Left: Degree Information -->
+          <div>
+            <h3 class="edu-column-title">🎓 Degree</h3>
+            <div id="education-card-container">
+              <!-- Populated by script.js -->
+            </div>
+          </div>
+
+          <!-- Right: Professional Certifications -->
+          <div>
+            <h3 class="edu-column-title">📜 Verified Certifications</h3>
+            <div id="certifications-container">
+              <!-- Populated by script.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact Section (Section 3.8, FR-10)
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Discuss Opportunities</h2>
+          <p class="section-subtitle">
+            Have a question, feedback, or a fresher Java Full Stack opening? I'd love to connect.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Direct Information Card -->
+          <div class="contact-info-card">
+            <div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 8px;">Direct Channels</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 24px;">
+                Feel free to email me directly or connect through LinkedIn and GitHub. I respond within 24 hours.
+              </p>
+
+              <div class="contact-channels">
+                <div class="contact-item">
+                  <div class="contact-icon-box">📧</div>
+                  <div class="contact-details">
+                    <h4>Email</h4>
+                    <a href="mailto:sachinpatil272003@gmail.com" class="contact-value">sachinpatil272003@gmail.com</a>
+                    <div>
+                      <button type="button" class="copy-email-btn" id="copy-email-btn">
+                        <span>📋</span> Copy email address
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon-box">🔗</div>
+                  <div class="contact-details">
+                    <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/sachin-patil272003" target="_blank" rel="noopener noreferrer"
+                      class="contact-value">linkedin.com/in/sachin-patil272003</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon-box">💻</div>
+                  <div class="contact-details">
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/Me-sachin123" target="_blank" rel="noopener noreferrer"
+                      class="contact-value">github.com/Me-sachin123 ↗</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon-box">📍</div>
+                  <div class="contact-details">
+                    <h4>Location</h4>
+                    <span class="contact-value">Bengaluru, Karnataka, India</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="assets/resume/sachin_patil_resume.pdf" download="sachin_patil_resume.pdf"
+                class="btn btn-secondary" style="width: 100%;">
+                <span>Download Resume (PDF)</span> 📄
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form (FR-10) -->
+          <div class="contact-form-card">
+            <h3 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 8px;">Send a Message</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 24px;">
+              Leave your contact details and message below.
+            </p>
+
+            <form class="contact-form" id="portfolio-contact-form" action="https://formspree.io/f/sample" method="POST">
+              <div class="form-group">
+                <label for="sender-name" class="form-label">Your Name</label>
+                <input type="text" id="sender-name" name="name" class="form-input"
+                  placeholder="e.g. Recruiter / Tech Lead" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email" class="form-label">Your Email</label>
+                <input type="email" id="sender-email" name="email" class="form-input"
+                  placeholder="e.g. name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message" class="form-label">Message</label>
+                <textarea id="sender-message" name="message" class="form-textarea"
+                  placeholder="Hello Sachin, we are interested in your profile for a Java Full Stack role..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width: 100%;">
+                <span>Send Message</span> 🚀
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer (Section 3.9)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span>Sachin</span> • Java Full Stack Developer
+        </div>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#experience" class="footer-link">Experience</a>
+          <a href="#education" class="footer-link">Education</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Sachin. All rights reserved.
+        </div>
+        <div class="footer-built-with">
+          Built with HTML, CSS and JavaScript •
+          <a href="https://github.com/Me-sachin123" target="_blank" rel="noopener noreferrer"
+            style="color: var(--accent-primary); text-decoration: underline;">
+            GitHub Repository
+          </a>
+        </div>
+        <div>
+          <a href="#home" class="back-to-top-btn" aria-label="Back to top">
+            Back to top ↑
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
